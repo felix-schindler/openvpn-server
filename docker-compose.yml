@@ -35,8 +35,8 @@ services:
        container_name: openvpn-ui
        image: d3vilh/openvpn-ui:latest
        environment:
-           - OPENVPN_ADMIN_USERNAME=admin
-           - OPENVPN_ADMIN_PASSWORD=gagaZush
+           - OPENVPN_ADMIN_USERNAME=${OPENVPN_ADMIN_USERNAME}
+           - OPENVPN_ADMIN_PASSWORD=${OPENVPN_ADMIN_PASSWORD}
        privileged: true
        ports:
            - "8080:8080/tcp"
